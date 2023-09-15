@@ -12,19 +12,17 @@ public class NewBehaviourScript : MonoBehaviour
     void Update()
     {
         if (Input.GetKey (KeyCode.D)) {
-            transform.Translate (0.02f, 0.0f, 0f);
+            transform.Rotate (0.0f, 0.1f, 0f);
         }
         if (Input.GetKey (KeyCode.A)) {
-            transform.Translate (-0.02f, 0.0f, 0f);
+            transform.Rotate (0.0f, -0.1f, 0f);
         }
         if (Input.GetKey (KeyCode.W)) {
-            transform.Translate (0.0f, 0f, 0.02f);
+            transform.Translate (0.0f, 0f, -0.01f);
         }
         if (Input.GetKey (KeyCode.S)) {
-            transform.Translate (0f, 0f, -0.02f);
+            transform.Translate (0f, 0f, 0.01f);
         }
-
-
-        }
-      
     }
+      
+ }
