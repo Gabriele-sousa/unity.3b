@@ -112,4 +112,4 @@ Para Criar esse projeto foram utilizados os seguintes passos
   * O personagem pode ser empurrado e atordoado por forças externas.
   * O script suporta pontos de verificação para recarregar a posição do personagem.
 
-# script feito por AisuKase Studio reescrito e estudado
+### script feito por AisuKase Studio reescrito e estudado
