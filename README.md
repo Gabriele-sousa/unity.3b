@@ -32,29 +32,29 @@ Para Criar esse projeto foram utilizados os seguintes passos
 # Camera Manager Script
 
 * Variáveis Públicas
-  * followSpeed: A velocidade com que a câmera segue o alvo.
-  * mouseSpeed: A sensibilidade do movimento do mouse para girar a câmera.
-  * cameraDist: A distância inicial da câmera ao alvo.
-  * target: O objeto que a câmera deve seguir.
+  * `followSpeed`: A velocidade com que a câmera segue o alvo.
+  * `mouseSpeed`: A sensibilidade do movimento do mouse para girar a câmera.
+  * `cameraDist`: A distância inicial da câmera ao alvo.
+  * `target`: O objeto que a câmera deve seguir.
 
 <br>
 
 * Variáveis Privadas
-  * pivot: O ponto de rotação da câmera.
-  * camTrans: A transformação da câmera.
-  * turnSmoothing: O valor de suavização para as rotações.
-  * minAngle e maxAngle: Os ângulos mínimo e máximo de inclinação da câmera.
-  * smoothX, smoothY, smoothXvelocity, smoothYvelocity: Variáveis de controle de suavização de rotação.
-  * lookAngle e tiltAngle: Os ângulos de olhar e inclinação da câmera.
+  * `pivot`: O ponto de rotação da câmera.
+  * `camTrans`: A transformação da câmera.
+  * `turnSmoothing`: O valor de suavização para as rotações.
+  * `minAngle e maxAngle`: Os ângulos mínimo e máximo de inclinação da câmera.
+  * `smoothX, smoothY, smoothXvelocity, smoothYvelocity`: Variáveis de controle de suavização de rotação.
+  * `lookAngle e tiltAngle`: Os ângulos de olhar e inclinação da câmera.
 
 <br>
 
 * Métodos
-  * Init(): Inicializa as variáveis camTrans e pivot com a câmera principal e seu pai.
-  * FollowTarget(float d): Move a câmera em direção ao alvo com uma velocidade suavizada.
-  * HandleRotations(float d, float v, float h, float targetSpeed): Controla as rotações da câmera com base nos movimentos do mouse.
-  * FixedUpdate(): Chamado em intervalos fixos, lê a entrada do mouse e atualiza o comportamento da câmera.
-  * LateUpdate(): Chamado após o Update(), ajusta a posição da câmera para evitar colisões com objetos.
+  * `Init()`: Inicializa as variáveis camTrans e pivot com a câmera principal e seu pai.
+  * `FollowTarget(float d)`: Move a câmera em direção ao alvo com uma velocidade suavizada.
+  * `HandleRotations(float d, float v, float h, float targetSpeed)`: Controla as rotações da câmera com base nos movimentos do mouse.
+  * `FixedUpdate()`: Chamado em intervalos fixos, lê a entrada do mouse e atualiza o comportamento da câmera.
+  * `LateUpdate()`: Chamado após o Update(), ajusta a posição da câmera para evitar colisões com objetos.
 
 <br>
 
@@ -68,40 +68,40 @@ Para Criar esse projeto foram utilizados os seguintes passos
 # Character Control Script
 
 * Variáveis Públicas
-  * speed: A velocidade de movimento do personagem no chão.
-  * airVelocity: A velocidade de movimento do personagem no ar.
-  * gravity: A força da gravidade que afeta o personagem.
-  * maxVelocityChange: A mudança máxima de velocidade permitida por quadro.
-  * jumpHeight: A altura do salto do personagem.
-  * maxFallSpeed: A velocidade máxima de queda permitida.
-  * rotateSpeed: A velocidade de rotação do personagem.
-  * cam: A câmera usada para determinar a direção de movimento com base na visão.
+  * `speed`: A velocidade de movimento do personagem no chão.
+  * `airVelocity`: A velocidade de movimento do personagem no ar.
+  * `gravity`: A força da gravidade que afeta o personagem.
+  * `maxVelocityChange`: A mudança máxima de velocidade permitida por quadro.
+  * `jumpHeight`: A altura do salto do personagem.
+  * `maxFallSpeed`: A velocidade máxima de queda permitida.
+  * `rotateSpeed`: A velocidade de rotação do personagem.
+  * `cam`: A câmera usada para determinar a direção de movimento com base na visão.
 
 <br>
 
 * Variáveis Privadas
-  * moveDir: A direção de movimento do personagem.
-  * rb: O componente Rigidbody do personagem para simulação de física.
-  * distToGround: A distância do centro do personagem ao chão.
-  * canMove: Um indicador de se o personagem pode se mover.
-  * isStunned: Um indicador de se o personagem está atordoado.
-  * wasStunned: Um indicador de se o personagem estava atordoado antes de ficar atordoado novamente.
-  * pushForce: A força com que o personagem é empurrado quando atingido.
-  * pushDir: A direção do empurrão.
-  * checkPoint: A posição do último ponto de verificação do personagem.
-  * slide: Um indicador de se o personagem está deslizando.
+  * `moveDir`: A direção de movimento do personagem.
+  * `rb`: O componente Rigidbody do personagem para simulação de física.
+  * `distToGround`: A distância do centro do personagem ao chão.
+  * `canMove`: Um indicador de se o personagem pode se mover.
+  * `isStunned`: Um indicador de se o personagem está atordoado.
+  * `wasStunned`: Um indicador de se o personagem estava atordoado antes de ficar atordoado novamente.
+  * `pushForce`: A força com que o personagem é empurrado quando atingido.
+  * `pushDir`: A direção do empurrão.
+  * `checkPoint`: A posição do último ponto de verificação do personagem.
+  * `slide`: Um indicador de se o personagem está deslizando.
 
 <br>
 
 * Métodos
-  * IsGrounded(): Verifica se o personagem está no chão usando um raio.
-  * Awake(): Inicializa o componente Rigidbody e outros valores no início.
-  * FixedUpdate(): Lida com a física e o movimento do personagem.
-  * Update(): Lê a entrada do jogador e determina a direção do movimento com base na visão da câmera.
-  * CalculateJumpVerticalSpeed(): Calcula a velocidade vertical necessária para alcançar a altura de salto desejada.
-  * HitPlayer(Vector3 velocityF, float time): Empurra o personagem com uma força especificada e controla o atordoamento.
-  * LoadCheckPoint(): Move o personagem de volta ao último ponto de verificação.
-  * Decrease(float value, float duration): Diminui gradualmente a força de empurrão ou atordoamento.
+  * `IsGrounded()`: Verifica se o personagem está no chão usando um raio.
+  * `Awake()`: Inicializa o componente Rigidbody e outros valores no início.
+  * `FixedUpdate()`: Lida com a física e o movimento do personagem.
+  * `Update()`: Lê a entrada do jogador e determina a direção do movimento com base na visão da câmera.
+  * `CalculateJumpVerticalSpeed()`: Calcula a velocidade vertical necessária para alcançar a altura de salto desejada.
+  * `HitPlayer(Vector3 velocityF, float time)`: Empurra o personagem com uma força especificada e controla o atordoamento.
+  * `LoadCheckPoint()`: Move o personagem de volta ao último ponto de verificação.
+  * `Decrease(float value, float duration)`: Diminui gradualmente a força de empurrão ou atordoamento.
 
 <br>
 
@@ -111,4 +111,5 @@ Para Criar esse projeto foram utilizados os seguintes passos
   * A física do Rigidbody é usada para simular movimento realista.
   * O personagem pode ser empurrado e atordoado por forças externas.
   * O script suporta pontos de verificação para recarregar a posição do personagem.
-#script feito por AisuKase Studio reescrito e estudado
+
+# script feito por AisuKase Studio reescrito e estudado
