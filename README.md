@@ -10,4 +10,8 @@ O intuito do projeto é familiarizar o uso de oprientação a objeto na engine U
 Para acessar a cena é necessario o Unity com a versão `2022.2.15f1`
 
 ## Instalação
-1. Clonar o projeto
+1. Clonar o projeto 'https://github.com/Gabriele-sousa/unity.3b.git'.
+2. Abrir o projeto no Unity.
+
+## Desenvolvimento
+Para Criar esse projeto foram utilizados os seguintes passos
