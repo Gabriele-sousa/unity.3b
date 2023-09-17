@@ -29,7 +29,7 @@ Para Criar esse projeto foram utilizados os seguintes passos
    (imagem3)
 
 ## Programando o Camera Manager Script
-# Camera Manager Script
+### Camera Manager Script
 
 * Variáveis Públicas
   * `followSpeed`: A velocidade com que a câmera segue o alvo.
@@ -65,7 +65,7 @@ Para Criar esse projeto foram utilizados os seguintes passos
   * A câmera pode ser inclinada dentro de ângulos mínimos e máximos definidos.
 
 ## Programando o Character Control
-# Character Control Script
+### Character Control Script
 
 * Variáveis Públicas
   * `speed`: A velocidade de movimento do personagem no chão.
