@@ -18,15 +18,15 @@ Para Criar esse projeto foram utilizados os seguintes passos
 1. Baixar assets na asset store.
 * Esses foram os assets baixados para o projeto
 
-  (imagem1)
+  <img src="img/1.png"/>
 
 2. Colocar os game objects na cena.
 
-   (imagem2)
+   <img src="img/2.png"/>
 
 3. Criar os script e os programar
 
-   (imagem3)
+  <img src="img/4.png"/>
 
 ## Programando o Camera Manager Script
 ### Camera Manager Script
