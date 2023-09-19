@@ -112,4 +112,12 @@ Para Criar esse projeto foram utilizados os seguintes passos
   * O personagem pode ser empurrado e atordoado por forças externas.
   * O script suporta pontos de verificação para recarregar a posição do personagem.
 
-### script feito por AisuKase Studio reescrito e estudado
+### script feito por AisuKase Studio reescrito e estudado para fins pedagógicos
+
+## Problemas
+Tivemos um certo problema em relação com o código de mudar de cena proposto no teams
+
+tambem tivesmosproblema com a mecanica dos fantasmas devido a falta de tempo e orientação
+
+## Autores
+Davi dos Santos Nascimento e Gabriele Batista Sousa
